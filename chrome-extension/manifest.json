@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Webpage Q&A (RAG)",
+  "version": "1.0",
+  "description": "Ask questions about the current webpage using RAG + Ollama",
+  "permissions": ["activeTab", "scripting"],
+  "host_permissions": ["http://127.0.0.1:8001/*"],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
+
