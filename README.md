@@ -37,6 +37,7 @@ This project uses **RAG** to ensure:
 ---
 
 ## 🏗️ System Architecture
+```
 Webpage
 ↓
 Chrome Extension (DOM Extraction)
@@ -54,7 +55,7 @@ Relevant Context Retrieval
 Ollama (LLaMA 3)
 ↓
 Answer to User
-
+```
 
 ---
 
@@ -93,6 +94,7 @@ Answer to User
 ---
 
 ## 📁 Project Structure
+```
 webpage-qa-rag/
 │
 ├── backend/
@@ -110,7 +112,7 @@ webpage-qa-rag/
 │
 ├── .gitignore
 └── README.md
-
+```
 ---
 
 ## ⚙️ Setup Instructions (Linux)
